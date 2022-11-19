@@ -14,11 +14,15 @@
   <body>
     <!--HEADER-->
     <header class="countries__header">
-      <div class="countries__header-content">
-        <h1 class="heading heading-light">Where in the world?</h1>
-        <div class="change">
-          <button class="">light</button>
-          <button class="">dark</button>
+      <div class="container">
+        <div class="countries__header-content">
+          <h1 class="heading heading-light">Where in the world?</h1>
+          <div class="change">
+            <button onclick="toggleTheme()" id="light" class="btnLight">
+              light
+            </button>
+            <button onclick="toggleTheme()" id="dark">dark</button>
+          </div>
         </div>
       </div>
     </header>
@@ -26,7 +30,7 @@
     <!--MAIN-->
     <main class="countries__main">
       <!--HERO-->
-      <section class="countries__hero">
+      <div class="countries__hero">
         <div class="container">
           <div class="countries__hero-content">
             <label class="countries__hero-search">
@@ -47,7 +51,7 @@
             </select>
           </div>
         </div>
-      </section>
+      </div>
 
       <!--INFORMATIONS-->
       <section class="information">
@@ -237,5 +241,12 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const bodyElement = document.body;
+      function toggleTheme() {
+        bodyElement.classList.toggle("dark-body");
+      }
+    </script>
   </body>
 </html>

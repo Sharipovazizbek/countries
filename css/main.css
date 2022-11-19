@@ -1,8 +1,8 @@
 /*FONT-FASE*/
 @font-face {
   font-family: "Nunito Sans";
-  src: url("NunitoSans-Light.woff2") format("woff2"),
-    url("NunitoSans-Light.woff") format("woff");
+  src: url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "Nunito Sans";
-  src: url("NunitoSans-SemiBold.woff2") format("woff2"),
-    url("NunitoSans-SemiBold.woff") format("woff");
+  src: url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
   font-family: "Nunito Sans";
-  src: url("NunitoSans-Regular.woff2") format("woff2"),
-    url("NunitoSans-Regular.woff") format("woff");
+  src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -134,8 +134,6 @@ ul {
 body {
   font-family: "Nunito Sans", "Arial", sans-serif;
   color: var(--black);
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 img {
@@ -149,12 +147,31 @@ img {
   margin: 0 auto;
 }
 
+.dark-body {
+  background-color: var(--bg__dark-item);
+  color: var(--dark-color);
+}
+.dark-body .countries__main {
+  background-color: var(--body__bg-dark);
+}
+.dark-body .countries__list {
+  background-color: var(--bg__dark-item);
+}
+.dark-body .hero__search-item {
+  background-color: var(--bg__dark-item);
+}
+.dark-body .filtr__region {
+  background-color: var(--bg__dark-item);
+}
+.dark-body * {
+  color: var(--dark-color) !important;
+}
 /*HEADER*/
 .countries__header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 80px;
+  padding: 24px 0;
 }
 /*MAIN*/
 .countries__main {
@@ -165,7 +182,6 @@ img {
 .countries__hero-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 48px 0;
 }
 .hero__search-item {
@@ -207,6 +223,6 @@ img {
   margin-bottom: 25px;
 }
 .countries__list-item {
-  padding-left: 20px;
-  padding-bottom: 35px;
+  padding: 35px 20px;
+  padding-top: 0;
 }

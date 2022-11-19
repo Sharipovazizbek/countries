@@ -56,6 +56,7 @@
 /*CUSTOM-PROPS*/
 :root {
   --body__bg-light: #f2f2f2;
+  --bg__light-item: #ffffff;
   --body__bg-dark: #202c36;
   --bg__dark-item: #2b3844;
   --ligth-color: #111517;
@@ -79,6 +80,7 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 15px;
 }
 .title-light {
   color: var(--ligth-color);
@@ -91,6 +93,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 8px;
 }
 .text-light {
   color: var(--ligth-color);
@@ -133,6 +136,7 @@ body {
   color: var(--black);
   max-width: 1440px;
   margin: 0 auto;
+  background-color: var(--body__bg-light);
 }
 
 img {
@@ -142,6 +146,32 @@ img {
 
 .container {
   width: 1200px;
-  padding: 0 80px;
+  padding: 0 80px 45px 80px;
   margin: 0 auto;
+}
+
+/*MAIN*/
+.countries__main {
+  background-color: var(--body__bg-light);
+}
+
+/*INFORMATIONS*/
+.countries__content-top,
+.countries__content-bottom {
+  display: flex;
+  gap: 70px;
+}
+.countries__content-top {
+  margin-bottom: 75px;
+}
+.countries__list {
+  background-color: var(--bg__light-item);
+}
+.countries__img {
+  width: 265px;
+  margin-bottom: 25px;
+}
+.countries__list-item {
+  padding-left: 20px;
+  padding-bottom: 35px;
 }
